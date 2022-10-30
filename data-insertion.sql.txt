@@ -1,0 +1,31 @@
+insert into customer(
+	customer_id, first_name, last_name, email, billing_info
+) values(
+	1, 'andy', 'kraus', 'andrewkraus44@gmail.com', '1111-1111-1111-1111'
+)
+--populating everything inside of the customer table 
+insert into movie(
+	movie_id, title 
+) values(
+	1,
+	'the dude with the chick tattoo'
+)
+--add everything that's needed for a movie  
+
+insert into tickets(
+	ticket_number , sub_total,customer_id, movie_id  
+) values(
+	1, '12.80', 1,1
+)
+--displaying info for tickets 
+
+insert into concessions(
+	concession_receipt, drink_total, snack_total, customer_id 
+) values(
+	1,12.50,12.50,1
+);
+--Buying some expensive drinks and snacks at the concession 
+
+select * from concessions 
+
+--Checking the receipt wise so freaking expensive
